@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MM Tech — Homepage Options</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --bg:#111214; --panel:#1a1c1f; --line:#2a2d31; --ink:#f2f2f0; --ink-dim:#9a9ea3; --accent:#4fd6a8;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{height:100%;}
+  body{background:var(--bg); color:var(--ink); font-family:'Helvetica Neue',Arial,sans-serif; display:flex; flex-direction:column;}
+
+  .tabbar{
+    display:flex; align-items:center; gap:0; background:var(--panel); border-bottom:1px solid var(--line);
+    padding:0 20px; overflow-x:auto; flex-shrink:0;
+  }
+  .tabbar .title{
+    font-size:13px; font-weight:700; letter-spacing:0.04em; color:var(--ink-dim); padding:16px 20px 16px 0;
+    border-right:1px solid var(--line); margin-right:12px; white-space:nowrap;
+  }
+  .tab{
+    padding:16px 20px; font-size:13.5px; color:var(--ink-dim); cursor:pointer; white-space:nowrap;
+    border-bottom:2px solid transparent; font-weight:600; user-select:none;
+  }
+  .tab:hover{color:var(--ink);}
+  .tab.active{color:var(--accent); border-bottom-color:var(--accent);}
+  .tab .sub{display:block; font-size:10.5px; font-weight:400; color:var(--ink-dim); margin-top:2px;}
+
+  .frame-wrap{flex:1; position:relative;}
+  iframe{width:100%; height:100%; border:none; display:block; background:#fff;}
+</style>
+</head>
+<body>
+
+<div class="tabbar">
+  <div class="title">MM TECH — OPTIONS</div>
+  <div class="tab active" data-src="option-a-command-deck.html">Example</div>
+  <div class="tab" data-src="option-b-structural-authority.html">Example 2</div>
+  <div class="tab" data-src="option-c-with-images.html">Example 3</div>
+  <div class="tab" data-src="option-d-dossier.html">Example 4</div>
+  <div class="tab" data-src="option-e-bold-editorial.html">Example 5</div>
+  <div class="tab" data-src="option-f-interface.html">Example 6</div>
+ <div class="tab" data-src="optiong.html">Example 7</div>
+ <div class="tab" data-src="optionh.html">Example 8</div>
+</div>
+
+<div class="frame-wrap">
+  <iframe id="viewer" src="option-a-command-deck.html" title="Homepage option preview"></iframe>
+</div>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const viewer = document.getElementById('viewer');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      viewer.src = tab.dataset.src;
+    });
+  });
+</script>
+
+</body>
+</html>
