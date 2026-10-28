@@ -1,0 +1,28 @@
+MM TECH: IMAGES STILL NEEDED
+============================
+Save each one in the /img folder with the exact name below and it
+appears automatically. Until then, each slot shows a dark placeholder.
+Landscape, at least 1600px wide (2400px for page headers), saved as .jpg.
+Dark grey and neutral tones, no logos or signage, no faces.
+
+PAGE HEADERS (sit behind the page title, darkened like the homepage hero)
+  page-what-we-do.jpg   e.g. close-up of a dressed cable tray or panel row
+  page-our-work.jpg     e.g. data centre exterior or drone shot of a unit
+  page-about.jpg        e.g. engineers' hands at work, hi-vis, no faces
+  page-careers.jpg      e.g. engineer working in a plant room, from behind
+  page-contact.jpg      e.g. long plant room or switch room corridor
+
+WHAT WE DO
+  sector-dc.jpg         wide data hall shot during fit-out (different from the hero)
+
+OUR WORK (real photos from MM Tech)
+  work-1.jpg to work-5.jpg   drone shot, cable baskets, finished data hall,
+                             panels, commercial building exterior
+
+ALREADY DONE
+  hero.jpg, svc-bms.jpg, svc-epms.jpg, svc-commercial.jpg, cta.jpg, og.jpg
+
+LATER
+  accr-1.png to accr-4.png   accreditation logos. Then delete the word
+                             "hidden" on the accreditations section in
+                             index.html and about.html.

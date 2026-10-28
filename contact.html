@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | MM Tech Electrical Solutions</title>
+<meta name="description" content="Talk to MM Tech Electrical Solutions about a BMS or EPMS installation package.">
+<meta property="og:title" content="Contact | MM Tech Electrical Solutions">
+<meta property="og:description" content="Talk to MM Tech Electrical Solutions about a BMS or EPMS installation package.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="in">
+    <a class="logo" href="index.html" aria-label="MM Tech Electrical Solutions, home">
+      <img src="img/MMlogo.png" alt="MM Tech Electrical Solutions">
+    </a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <ul class="menu" id="menu">
+      <li class="has-drop"><a href="what-we-do.html">What we do</a>
+        <ul class="drop">
+          <li><a href="what-we-do.html#bms">BMS installation</a></li>
+          <li><a href="what-we-do.html#epms">EPMS installation</a></li>
+          <li><a href="what-we-do.html#data-centres">Data centres</a></li>
+          <li><a href="what-we-do.html#commercial">Commercial buildings</a></li>
+        </ul>
+      </li>
+      <li><a href="our-work.html">Our work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a class="btn btn-d" href="contact.html">Talk to us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- PAGE HEADER: save a photo as img/page-contact.jpg and it appears behind the text -->
+<section class="hero hero-page" style="--bg:url('img/page-contact.jpg')">
+  <div class="in">
+    <p class="tag">Contact</p>
+    <h1>Let's talk about your next package.</h1>
+    <p class="lede">Send us the drawings or a short outline of your project and we'll come back to you.</p>
+  </div>
+</section>
+
+<section class="contact dark" style="border-top:1px solid var(--rule-dk)">
+  <div class="in">
+    <div>
+      <p class="tag">Enquiry</p>
+      <h2>Tell us about the project.</h2>
+      <div class="direct">
+        <span class="k">Direct</span>
+        <span>[email address]</span>
+        <span>[phone number]</span>
+        <span class="k" style="margin-top:18px">Registered office</span>
+        <span>[Registered address]</span>
+      </div>
+    </div>
+    <form name="enquiry" method="POST" action="thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="enquiry">
+      <p hidden><label>Leave blank<input name="bot-field"></label></p>
+      <label for="f-name">Name<input id="f-name" name="name" autocomplete="name" required></label>
+      <label for="f-co">Company<input id="f-co" name="company" autocomplete="organization"></label>
+      <label for="f-em">Email<input id="f-em" name="email" type="email" autocomplete="email" required></label>
+      <label for="f-ph">Phone<input id="f-ph" name="phone" type="tel" autocomplete="tel"></label>
+      <label for="f-type">Package
+        <select id="f-type" name="type"><option>BMS</option><option>EPMS</option><option>BMS and EPMS</option><option>Other</option></select>
+      </label>
+      <label for="f-sector">Sector
+        <select id="f-sector" name="sector"><option>Data centre</option><option>Commercial</option><option>Other</option></select>
+      </label>
+      <label class="full" for="f-date">Tender return date (if known)<input id="f-date" name="tender-date"></label>
+      <label class="full" for="f-msg">Project outline<textarea id="f-msg" name="message"></textarea></label>
+      <div class="send"><button class="btn btn-p" type="submit">Send enquiry <span class="ar">→</span></button></div>
+    </form>
+  </div>
+</section>
+
+<section class="white">
+  <div class="in">
+    <div class="cols2">
+      <div>
+        <p class="tag">What to send</p>
+        <h2>Helping us price it.</h2>
+        <p class="lede" style="margin-bottom:22px">The more we see up front, the quicker and more accurate our price. Send what you have.</p>
+        <ul class="ticks lg">
+          <li>Drawings and specification</li>
+          <li>Points schedule</li>
+          <li>Programme</li>
+          <li>Tender return date</li>
+        </ul>
+      </div>
+      <div>
+        <p class="tag">What happens next</p>
+        <h2>From enquiry to price.</h2>
+        <ol class="steps-list">
+          <li><b>We review it.</b> We go through the drawings and scope and come back with any questions.</li>
+          <li><b>We confirm the scope.</b> What's included, what isn't, and any assumptions, before we price.</li>
+          <li><b>You get a clear price.</b> Set out against the agreed scope, so you can compare it like for like.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="in">
+    <div class="fgrid">
+      <div>
+        <a class="logo foot-logo" href="index.html"><img src="img/MMlogo.png" alt="MM Tech Electrical Solutions"></a>
+        <p>BMS and EPMS installation for hyperscale data centres.</p>
+      </div>
+      <div><h4>Pages</h4><ul><li><a href="what-we-do.html">What we do</a></li><li><a href="our-work.html">Our work</a></li><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>[email address]</li><li>[phone number]</li></ul></div>
+      <div><h4>Company</h4><ul><li>MM Tech Electrical Solutions Ltd</li><li>Company no. [number]</li><li>[Registered address]</li></ul></div>
+    </div>
+    <div class="legal"><span>© <span class="yr">2026</span> MM Tech Electrical Solutions Ltd</span><a href="privacy.html">Privacy policy</a></div>
+  </div>
+</footer>
+</body>
+</html>

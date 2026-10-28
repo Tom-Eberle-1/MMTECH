@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Careers | MM Tech Electrical Solutions</title>
+<meta name="description" content="Work on major data centre builds in the UK and overseas with MM Tech Electrical Solutions.">
+<meta property="og:title" content="Careers | MM Tech Electrical Solutions">
+<meta property="og:description" content="Work on major data centre builds in the UK and overseas with MM Tech Electrical Solutions.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="in">
+    <a class="logo" href="index.html" aria-label="MM Tech Electrical Solutions, home">
+      <img src="img/MMlogo.png" alt="MM Tech Electrical Solutions">
+    </a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <ul class="menu" id="menu">
+      <li class="has-drop"><a href="what-we-do.html">What we do</a>
+        <ul class="drop">
+          <li><a href="what-we-do.html#bms">BMS installation</a></li>
+          <li><a href="what-we-do.html#epms">EPMS installation</a></li>
+          <li><a href="what-we-do.html#data-centres">Data centres</a></li>
+          <li><a href="what-we-do.html#commercial">Commercial buildings</a></li>
+        </ul>
+      </li>
+      <li><a href="our-work.html">Our work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="careers.html" aria-current="page">Careers</a></li>
+      <li><a class="btn btn-d" href="contact.html">Talk to us</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- PAGE HEADER: save a photo as img/page-careers.jpg and it appears behind the text -->
+<section class="hero hero-page" style="--bg:url('img/page-careers.jpg')">
+  <div class="in">
+    <p class="tag">Careers</p>
+    <h1>Work on major data centre builds.</h1>
+    <p class="lede">We're always keen to hear from skilled people who want to work on hyperscale data centre projects in the UK and overseas.</p>
+    <div class="cta"><a class="btn btn-p" href="#apply">Send your CV <span class="ar">→</span></a></div>
+  </div>
+</section>
+
+<section class="white">
+  <div class="in split">
+    <div><p class="tag">The work</p><h2>What working with us involves.</h2></div>
+    <div class="copy">
+      <p>Our engineers install BMS and EPMS systems on some of the largest data centre builds in the country, from containment and cabling through to terminations and testing.</p>
+      <p>The sites are live, secure and tightly run. The standards are high, the programmes are demanding, and the work is done properly. If that's how you like to work, we'd like to hear from you.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="in">
+    <div class="cols2">
+      <div>
+        <p class="tag">Who we look for</p>
+        <h2>The people we hire.</h2>
+        <ul class="ticks lg">
+          <li>Qualified electricians <i class="ph">[confirm]</i></li>
+          <li>Experienced BMS and EPMS installers <i class="ph">[confirm]</i></li>
+          <li>Supervisors with data centre experience <i class="ph">[confirm]</i></li>
+          <li><i class="ph">[Apprentices / improvers?]</i></li>
+        </ul>
+      </div>
+      <div>
+        <p class="tag">What we offer</p>
+        <h2>What you get.</h2>
+        <ul class="ticks lg">
+          <li>Work on major hyperscale projects</li>
+          <li><i class="ph">[Rates / salary approach]</i></li>
+          <li><i class="ph">[Travel and accommodation for away work]</i></li>
+          <li><i class="ph">[Training and card support]</i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VACANCIES: hidden until there's a role to post. Delete the word hidden below, then copy the .vac block for each role. -->
+<section class="white" hidden>
+  <div class="in">
+    <div class="head"><div><p class="tag">Current vacancies</p><h2>Open roles.</h2></div></div>
+    <div class="vacs">
+      <article class="vac">
+        <div><h3>[Job title]</h3><p class="meta">[Location] · [Full-time / Contract]</p></div>
+        <p>[Two or three lines about the role.]</p>
+        <a class="link" href="#apply">Apply</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="contact dark" id="apply">
+  <div class="in">
+    <div>
+      <p class="tag">Send your CV</p>
+      <h2>Get in touch.</h2>
+      <p class="lede">Send us your details and CV. We'll keep them on file and contact you when a suitable role comes up.</p>
+    </div>
+    <form name="careers" method="POST" action="thanks.html" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="careers">
+      <p hidden><label>Leave blank<input name="bot-field"></label></p>
+      <label for="c-name">Name<input id="c-name" name="name" autocomplete="name" required></label>
+      <label for="c-em">Email<input id="c-em" name="email" type="email" autocomplete="email" required></label>
+      <label for="c-ph">Phone<input id="c-ph" name="phone" type="tel" autocomplete="tel"></label>
+      <label for="c-role">Role you're interested in<input id="c-role" name="role"></label>
+      <label class="full" for="c-cv">CV (PDF or Word, max 8MB)<input id="c-cv" name="cv" type="file" accept=".pdf,.doc,.docx"></label>
+      <label class="full" for="c-msg">Anything else<textarea id="c-msg" name="message"></textarea></label>
+      <div class="send"><button class="btn btn-p" type="submit">Send <span class="ar">→</span></button></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="in">
+    <div class="fgrid">
+      <div>
+        <a class="logo foot-logo" href="index.html"><img src="img/MMlogo.png" alt="MM Tech Electrical Solutions"></a>
+        <p>BMS and EPMS installation for hyperscale data centres.</p>
+      </div>
+      <div><h4>Pages</h4><ul><li><a href="what-we-do.html">What we do</a></li><li><a href="our-work.html">Our work</a></li><li><a href="about.html">About</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>[email address]</li><li>[phone number]</li></ul></div>
+      <div><h4>Company</h4><ul><li>MM Tech Electrical Solutions Ltd</li><li>Company no. [number]</li><li>[Registered address]</li></ul></div>
+    </div>
+    <div class="legal"><span>© <span class="yr">2026</span> MM Tech Electrical Solutions Ltd</span><a href="privacy.html">Privacy policy</a></div>
+  </div>
+</footer>
+</body>
+</html>
