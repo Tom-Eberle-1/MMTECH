@@ -476,3 +476,18 @@ body.has-hero .hero-page{padding-top:calc(var(--nav-h) + clamp(64px,9vw,128px))}
 .cta-img.cta-mark{background:radial-gradient(ellipse 70% 70% at 60% 50%,#1E2629 0%,transparent 70%),var(--ink);display:grid;place-items:center;overflow:hidden}
 .cta-img.cta-mark::after{display:none}
 .cta-img.cta-mark img{position:relative;inset:auto;width:78%;height:auto;object-fit:contain;filter:none;opacity:.07}
+
+/* ---------- Phones: tighter header and hero, readable logo ---------- */
+.logo-m{display:none}
+@media (max-width:620px){
+  :root{--nav-h:72px}
+  .nav .logo-full{display:none}
+  .logo-m{display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+  .nav .logo-m img{height:28px;width:auto}
+  .logo-m span{display:flex;align-items:center;gap:6px;font-family:var(--body);font-size:9.5px;font-weight:500;letter-spacing:.08em;color:var(--ink);white-space:nowrap}
+  .logo-m i{width:1px;height:10px;background:currentColor}
+  body.has-hero:not(.scrolled) .nav:not(.open) .logo-m span{color:#fff}
+  body.has-hero .hero{padding-top:calc(var(--nav-h) + 56px)}
+  body.has-hero .hero-page{padding-top:calc(var(--nav-h) + 48px)}
+  .hero .stats{margin-top:56px}
+}
